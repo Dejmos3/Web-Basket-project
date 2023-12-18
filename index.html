@@ -7,18 +7,25 @@
         <meta name="description" content="Koszyk sklepy">
         <meta name="robots" content="index, follow">
         <meta name="keywords" content="Koszyk">
-        <script src="src/basket.js"></script>
+        <script src="src/basket.js" async></script>
+        <script src="src/ui.js" async></script>
     </head>
     <body>
         <section>
             <h1>Lista produktów:</h1>
             <ul class="products-list">
-                <li><strong>Mandarynki</strong> - 9,99 zł <button class="btn-buy-product" data-name="Mandarynki" data-price="9.99">Kup!</button></li>
-                <li><strong>Pomidory</strong> - 12,99 zł <button class="btn-buy-product" data-name="Pomidory" data-price="12.99">Kup!</button></li>
-                <li><strong>Papryka</strong> - 10,99 zł <button class="btn-buy-product" data-name="Papryka" data-price="10.99">Kup!</button></li>
+                <li>
+                    <strong>Mandarynki</strong> - 9.99 zł <button class="btn-buy-product" data-name="Mandarynki" data-price="9.99">Kup!</button>
+                </li>
+                <li>
+                    <strong>Pomidory</strong> - 12.99 zł <button class="btn-buy-product" data-name="Pomidory" data-price="12.99">Kup!</button>
+                </li>
+                <li>
+                    <strong>Papryka</strong> - 10.99 zł <button class="btn-buy-product" data-name="Papryka" data-price="10.99">Kup!</button>
+                </li>
             </ul>
         </section>
-        <section>
+        <section class="basket">
             <h1>Twój koszyk:</h1>
             <ul class="basket-list"></ul>
             <button class="btn-buy-all" disabled>Złóż zamówienie</button>
