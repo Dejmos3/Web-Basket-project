@@ -9,6 +9,7 @@
         <meta name="keywords" content="Koszyk">
         <script src="src/basket.js" async></script>
         <script src="src/ui.js" async></script>
+        <script src="src/admin-ui.js" async></script>
     </head>
     <body>
         <section>
@@ -29,6 +30,14 @@
             <h1>Twój koszyk:</h1>
             <ul class="basket-list"></ul>
             <button class="btn-buy-all" disabled>Złóż zamówienie</button>
+        </section>
+        <section class="admin-add-product">
+            <h1>Administracja: Dodaj produkt</h1>
+            <form class="form-add-product">
+                <input type="text" name="product-name" placeholder="Nazwa produktu..." required>
+                <input type="number" name="product-price" placeholder="Cena produktu..." required>
+                <button type="submit">Dodaj</button>
+            </form>
         </section>
     </body>
 </html>
